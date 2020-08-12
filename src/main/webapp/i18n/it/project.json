@@ -1,0 +1,28 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "project": {
+      "home": {
+        "title": "Projects",
+        "createLabel": "Genera un nuovo Project",
+        "createOrEditLabel": "Genera o modifica un Project",
+        "notFound": "No Projects found"
+      },
+      "created": "&Egrave; stato generato un nuovo Project con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Project identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Project con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Project {{ id }}?"
+      },
+      "detail": {
+        "title": "Project"
+      },
+      "name": "Name",
+      "code": "Code",
+      "task": "Task",
+      "customer": "Customer",
+      "help": {
+        "name": "The firstname attribute."
+      }
+    }
+  }
+}

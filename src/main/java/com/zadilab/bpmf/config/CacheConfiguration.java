@@ -47,6 +47,20 @@ public class CacheConfiguration {
             createCache(cm, com.zadilab.bpmf.domain.User.class.getName());
             createCache(cm, com.zadilab.bpmf.domain.Authority.class.getName());
             createCache(cm, com.zadilab.bpmf.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.zadilab.bpmf.domain.Region.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Country.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Country.class.getName() + ".regions");
+            createCache(cm, com.zadilab.bpmf.domain.Location.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Department.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.zadilab.bpmf.domain.Task.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Employee.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.zadilab.bpmf.domain.Customer.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Project.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.Project.class.getName() + ".tasks");
+            createCache(cm, com.zadilab.bpmf.domain.Job.class.getName());
+            createCache(cm, com.zadilab.bpmf.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
