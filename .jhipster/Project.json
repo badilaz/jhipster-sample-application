@@ -1,0 +1,41 @@
+{
+  "name": "Project",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "task",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "task"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "customer",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200812145744",
+  "javadoc": "The Project entity.",
+  "entityTableName": "project",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

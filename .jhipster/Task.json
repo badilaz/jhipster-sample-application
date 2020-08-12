@@ -1,0 +1,47 @@
+{
+  "name": "Task",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "duration",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "project",
+      "otherEntityRelationshipName": "task",
+      "relationshipName": "project",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200812145444",
+  "javadoc": "The Task entity.",
+  "entityTableName": "task",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Customer",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "piva",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codFisc",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "location",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200812145644",
+  "javadoc": "The Customer entity.",
+  "entityTableName": "customer",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
